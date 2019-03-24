@@ -25,7 +25,23 @@ body{
     z-index: 1;
     justify-content: center;
     align-items: center;
+    transition: all .2s;
+}
 
+.side_news:hover{
+    opacity: 1;
+    transform:scale(1.1);
+}
+
+.icon{
+    margin-right: 10%;
+    font-size:1.8em;
+    transition: all .2s linear;
+}
+
+.icon:hover{
+    transform: rotate(360deg);
+    
 }
 
 .navbar {
@@ -35,6 +51,7 @@ body{
     top: 0;
     width: 100%;
     padding-top: 10px;
+    z-index: 10000;
   }
   
   .navbar a {
@@ -98,11 +115,11 @@ body{
   }
 
   .arrow_down{
-      width: 1.8rem;
+      width: 1.7rem;
       position: absolute;
       bottom: 0;
       left: 50%;
-      transform: translate(-50%,0%);
+      transform: scale(-50%,0%);
       color: white;
       padding-bottom: 10px;
       opacity: 0.3;
@@ -112,12 +129,12 @@ body{
   }
 
   .arrow_down:hover {
-    transform: translateX(-1.5px);
+    transform: scale(1.2);
     opacity: 1;
     text-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.2); }
   
   .arrow_down:active {
-    transform: translateX(-0.1px);
+    transform: scale(0.9);
     color: #2FD3D5;
     text-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.2); }
   

@@ -5,19 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SGTS NEWS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,600i,700,800,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/main.css" />
     <script src="main.js"></script>
    
 </head>
+<style>
+
+
+
+</style>
 <body>
         <header>
 
                 <div class="side_news">
-                    This site is steel in beta
-                </div>
+                        STRANICA JE U IZRADI <i class="fas fa-wrench icon"></i>
+                    </div>
                    
-                       <div class="navbar">
+                       <div class="navbar" id="nav">
                                <a href="index.html"><img src="assets/img/logo.png" alt="sgts_logo"></a>
                                <a href="#"><strike>Contact</strike></a>
                                <a href="#"><strike>About</strike></a>
@@ -26,7 +32,7 @@
                              </div>
            
                             <h1 class="header_title">SGTŠ <span>NEWS</span></h1>
-                            <a href="" class="arrow" >
+                            <a href="#posts" class="arrow" >
                             <svg class="arrow_down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-down" class="svg-inline--fa fa-angle-double-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="white" d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z"></path></svg></a>
                            
                </header>
@@ -85,5 +91,19 @@
                 </div>
                 
             </footer>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+	$(window).scroll(function() {
+  	if($(document).scrollTop() > 680) {
+    	$('#nav').addClass('scrolled');
+        
+    }
+    else {
+    $('#nav').removeClass('scrolled');
+    }
+  });
+});
+        </script>
 </body>
 </html>
