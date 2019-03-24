@@ -1,0 +1,355 @@
+*,
+*::after{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background-color: #e6e6e1;
+}
+
+.side_news{
+    position: fixed;
+    top:90%;
+    left:0;
+    background-color:red;
+    width:200px;
+    height:50px;
+    text-align: center;
+    display: flex;
+    opacity: 0.3;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+  }
+  
+  .navbar a {
+    float: right;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all .2s;
+    backface-visibility: hidden;
+    margin-right:20px;
+    
+  }
+  .navbar a:secound-child{
+    margin-right: 20px;
+  }
+ 
+  .navbar a:first-child{
+      float: left;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin:0;
+  }
+
+  .navbar a img {
+      width: 2rem;  
+  }
+  .active{
+      border-bottom: 1px solid #F8F300;
+  }
+
+  .navbar a:not(:first-child):hover{
+      border-bottom:1px solid #F8F300;
+  }
+  
+  header{
+      height: 100vh;
+      background-image: linear-gradient(to bottom right,#141E30, #243B55);
+      position: relative;
+  }
+
+  .header_title{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-size:6.1rem;
+   color: #00A9EC;
+   font-weight: 900;
+   word-spacing: 5px;
+   text-shadow: 5px 7px 30px  black; 
+   letter-spacing: 3px;
+  }
+
+  .header_title span{
+      color:#F8F300;
+  }
+
+  .arrow_down{
+      width: 1.8rem;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%,0%);
+      color: white;
+      padding-bottom: 10px;
+      opacity: 0.3;
+      transition: all .2s;
+      backface-visibility: hidden;/*Animation fix */
+      
+  }
+
+  .arrow_down:hover {
+    transform: translateX(-1.5px);
+    opacity: 1;
+    text-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.2); }
+  
+  .arrow_down:active {
+    transform: translateX(-0.1px);
+    color: #2FD3D5;
+    text-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.2); }
+  
+
+  .container{
+      margin: 0 auto;
+      display: grid ;
+      grid-template-columns: auto auto;
+      
+  }
+
+  .post{
+      position: relative;
+      width: 430px;
+      height: 440px;
+      margin-top: 100px;
+      margin-left:20%;
+      margin-bottom:10px;
+      
+      
+  }
+  .img_post{
+      width: 100%;
+      height: 286px;
+  }
+  .title{
+      position: absolute;
+      left:0px;
+      top:324px;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size:25px;
+      color: #484848;
+      letter-spacing: 0.53px;
+      display: block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+  }
+  .button{
+      position: absolute;
+      width: 122px;
+      height: 56px;
+      left:0;
+      top: 392px;
+      border-bottom: solid 2px #00A9EC; 
+      cursor: pointer;
+      transition: all .3s ease-in;
+      backface-visibility: hidden;
+  }
+
+  .button a {
+      text-align: left;
+      vertical-align: middle;
+      display: table-cell;
+      padding-left:0;
+      font-size: 28px;
+	  letter-spacing: 0.53px;
+      font-style: normal;
+      font-weight: bold;
+      color: rgba(0,169,236,1);
+      text-decoration: none;
+      transition: all .2s ease-in-out;
+      backface-visibility: hidden;
+  }
+
+  .button a:hover{
+      padding-left: 12px;
+     
+
+  }
+ 
+
+footer{
+    height: 250px;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    background-color: #484848;
+
+}
+
+footer .content{
+    position: absolute;
+    top: 30%;
+    left:20%;
+}
+
+ .content ul {
+    text-decoration: none;
+
+
+}
+
+footer ul li {
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+.navbar.scrolled{
+    background-color: #243B55;
+    transition: background-color 400ms ease-in-out;
+    z-index: 100;
+}
+/* 
+.header_post_img{
+    background-image: url("/assets/img/post.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    transform: matrix(1,0,0,1,0,0);
+} */
+
+
+.header_image_post{
+    background-image: url(/assets/img/slika2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+    z-index: -2000;
+}
+
+.wrapper{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    border-top: solid 5px #E3007B;
+    margin-top: 3%;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.07);
+    border-radius: 4px;
+}
+
+.post_title{
+    margin-top: 4%;
+    margin-bottom:10%;
+    text-align: center;
+    font-size:3em;
+    color:#333;
+}
+
+.path{
+    position: absolute;
+    left:-31px;
+    top: 36.3%;
+    z-index: ;
+}
+
+.part path{
+    background-color: #243B55;
+}
+
+.content{
+    line-height: 28px;
+    margin-bottom: 6%;
+    font-weight: 500;
+    color: #333;
+    padding: 0 2em;
+    text-align: left;
+    padding-bottom:2em;
+}
+
+.post_image{
+    width:80%;
+    height:400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+    margin-bottom: 7%;
+}
+
+a strike {
+    cursor: default;;
+}
+
+.wrapper_komentari{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 3%;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.07);
+    border-radius: 4px;
+    position: relative;
+}
+
+.komentari{
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-left: 5px;
+}
+
+input{
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin-top: 2%;
+    
+}
+
+.komentar{
+    padding: 70px 10px ;
+    text-align: inherit;
+}
+
+button{
+    margin: 2% 0;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #243B55;
+    border-left: 2px solid #243B55;
+    border-bottom-left-radius: 10%;
+    transition: all .2s ease-in;
+    backface-visibility: hidden;
+    cursor: pointer;
+    letter-spacing: 2px;
+    
+    
+}
+
+button:hover{
+    transform: scale(1.1);
+
+}
+
